@@ -1,0 +1,163 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLLERY</title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-light p-4 d-flex justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item bg-light">
+                    <a class="nav-link redStar" href="{% url 'home' %}">HOME</a>
+                </li>
+                <li class="nav-item bg-light">
+                    <a class="nav-link redStar" href="{% url 'attractions' %}">ATTRACTIONS</a>
+                </li>
+                <li class="nav-item bg-light">
+                    <a class="nav-link redStar" href="{% url 'gallery' %}">GALLLERY</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-light ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-around">
+                    <li class="nav-item bg-light">
+                        <a class="nav-link redStarNav" href="{% url 'home' %}">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-light redStarNav" href="{% url 'attractions' %}">ATTRACTIONS</a>
+                    </li>
+                    <li class="nav-item  bg-light">
+                        <a class="nav-link redStarNav" href="{% url 'gallery' %}">GALLLERY</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <img src="{% static '/imgs/navy_pier.jpg' %}" class="imgFormat"/>
+            <div class="row justify-content-start text-center">
+                <h1>GALLLERY</h1><hr/>
+            </div>
+        </div>
+        <div class="text-center">
+            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+           
+            <div class="row d-flex">
+              <div class="col-md-4"><img src="{% static '/imgs/aerial_shot_2.jpg' %}" class="p-2 " alt=""></div>
+              <div class="col-md-4"><img src="{% static '/imgs/thompson.jpg' %}" class="p-2 " alt=""></div>
+              <div class="col-md-4"><img src="{% static '/imgs/fountain.jpg' %}" class="p-2 " alt=""></div>
+            </div>
+          
+            <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+            <div class="row">
+                <div class="col-md-4"><img src="{% static '/imgs/aerial_day.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/taxi.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/aerial_night.jpg' %}" class="p-2 " alt=""></div>
+            </div>
+          
+            <!-- Columns are always 50% wide, on mobile and desktop -->
+            <div class="row">
+                <div class="col-md-4"><img src="{% static '/imgs/airport_2.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/divy.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/airport.jpg' %}" class="p-2 " alt=""></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"><img src="{% static '/imgs/chi.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/bean_2.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/art.jpg' %}" class="p-2 " alt=""></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"><img src="{% static '/imgs/amtrak.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/cta_3.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/pilot.jpg' %}" class="p-2 " alt=""></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"><img src="{% static '/imgs/station.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/tour_boat_3.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/cta_4.jpg' %}" class="p-2 " alt=""></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"><img src="{% static '/imgs/cta_2.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/cta.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/aerial_night_2.jpg' %}" class="p-2 " alt=""></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"><img src="{% static '/imgs/design.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/fountain.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/lake.jpg' %}" class="p-2 " alt=""></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"><img src="{% static '/imgs/tribune.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/tour_boat.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/park_2.jpg' %}" class="p-2 " alt=""></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"><img src="{% static '/imgs/prudential.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/wheel.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/skybox.jpg' %}" class="p-2 " alt=""></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"><img src="{% static '/imgs/bus.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/park.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/bridge_3.jpg' %}" class="p-2 " alt=""></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"><img src="{% static '/imgs/tour_boat_2.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/bean.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/bike.jpg' %}" class="p-2 " alt=""></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"><img src="{% static '/imgs/divy_2.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/pier.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/wheel_2.jpg' %}" class="p-2 " alt=""></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"><img src="{% static '/imgs/boat.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/chicago.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/door.jpg' %}" class="p-2 " alt=""></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"><img src="{% static '/imgs/station.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/skyline.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/flag.jpg' %}" class="p-2 " alt=""></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4"><img src="{% static '/imgs/trolly.jpg' %}" class="p-2 " alt=""></div>
+                <div class="col-md-4"><img src="{% static '/imgs/bridge.jpg' %}" class="p-2 " alt=""></div>
+            </div>
+
+            
+          </div>
+
+          
+    </div>
+</body>
+</html>

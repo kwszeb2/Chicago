@@ -1,0 +1,93 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTRACTIONS</title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-light p-4 d-flex justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item bg-light">
+                    <a class="nav-link redStar" href="{% url 'home' %}">HOME</a>
+                </li>
+                <li class="nav-item bg-light">
+                    <a class="nav-link redStar" href="{% url 'attractions' %}">ATTRACTIONS</a>
+                </li>
+                <li class="nav-item bg-light">
+                    <a class="nav-link redStar" href="{% url 'gallery' %}">GALLLERY</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-light ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-around">
+                    <li class="nav-item bg-light">
+                        <a class="nav-link redStarNav" href="{% url 'home' %}">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-light redStarNav" href="{% url 'attractions' %}">ATTRACTIONS</a>
+                    </li>
+                    <li class="nav-item  bg-light">
+                        <a class="nav-link redStarNav" href="{% url 'gallery' %}">GALLLERY</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <img src="{% static '/imgs/soldier_field.jpg' %}" class="imgFormat"/>
+            <div class="row justify-content-start text-center">
+                <h1>ATTRACTIONS</h1><hr/>
+            </div>
+            <p>
+                As the largest city in the American Midwest, Chicago has always held a special place in the hearts of its native sons and daughters as well as those who have adopted it as a place to live. For out-of-towners, there is a seemingly never-ending list of exciting things to do in the place that poet Carl Sandburg called <b><i>“City of the Big Shoulders.”</i></b> Here’s a brief taste of what can be found there.
+            </p>
+            <hr/>
+        </div>
+        
+        <div class="row">
+            <img src="{% static '/imgs/bean.jpg' %}" class="imgStyling">
+            <div class="row justify-content-start text-center">
+                <h1>MILLENNIUM PARK</h1>
+            </div>
+            <p>
+                Home to iconic public art installations such as Cloud Gate <b><i>(a.k.a. “The Bean”)</i></b>, this 25-acre park is one of the most popular gathering spots in the city. In the summer, the area is typically teeming with folks catching free concerts and movie screenings on the lawn at the Frank Gehry-designed Jay Pritzker Pavilion. (Psst: It’s usually BYOB). When it gets cold, skaters can be found sliding across the ice at the McCormick Tribune Ice Rink. Don’t miss Crown Fountain, an interactive installation featuring two 50-foot-tall LED video structures.
+            </p>
+        </div>
+        <div class="row">
+            <img src="{% static '/imgs/tour_boat.jpg' %}" class="imgStyling">
+            <div class="row justify-content-start text-center">
+                <h1>ARCHITECTURE TOUR</h1>
+            </div>
+            <p>
+                A boat trip is the breeziest way to survey the city’s famed architecture. An architectural tour is a must for any visit to Chicago, and the Chicago Architecture Foundation employs certified volunteer docents who narrate the history behind 50-plus downtown buildings. Hop aboard the Chicago’s First Lady from its boat docking station located along the beautiful Chicago Riverwalk for the 90-minute tour. There’s a full-service cash bar inside.
+            </p>
+        </div>
+        <div class="row">
+            <img src="{% static '/imgs/sears_tower_skydeck.jpg' %}" class="imgStyling">
+            <div class="row justify-content-start text-center">
+                <h1>SEARS TOWER SKYDECK</h1>
+            </div>
+            <p>
+                Where else to see the city at its most exciting than from a vantage point 1,353 feet above the streets? The observatory’s Ledge attraction places visitors in a glass box that juts out over the side of the building, allowing for some pretty epic selfies and views. How epic? Views from the 103rd floor are expansive, allowing guests to see up to four states and 50 miles out. Pro tip: Want to beat the crowds? Experience the skyline at night.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

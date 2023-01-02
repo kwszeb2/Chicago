@@ -1,0 +1,109 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </head>
+</head>
+<body>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-light p-4 d-flex justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item bg-light">
+                    <a class="nav-link redStar" href="{% url 'home' %}">HOME</a>
+                </li>
+                <li class="nav-item bg-light">
+                    <a class="nav-link redStar" href="{% url 'attractions' %}">ATTRACTIONS</a>
+                </li>
+                <li class="nav-item bg-light">
+                    <a class="nav-link redStar" href="{% url 'gallery' %}">GALLLERY</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-light ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-around">
+                    <li class="nav-item bg-light">
+                        <a class="nav-link redStarNav" href="{% url 'home' %}">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-light redStarNav" href="{% url 'attractions' %}">ATTRACTIONS</a>
+                    </li>
+                    <li class="nav-item  bg-light">
+                        <a class="nav-link redStarNav" href="{% url 'gallery' %}">GALLLERY</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="">
+        <video autoplay loop muted class=""><source src="{% static '/imgs/aerial_view.mp4' %}" type="video/mp4" /></video>
+       <!-- FIX RESPONSIVE SIZE ON VIDEO -->
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-start text-center">
+            <h1>WELCOME TO WINDY CITY</h1><hr/>
+        </div>
+            <p>
+                Located in the Midwest region of the United States, Chicago, Illinois, attracts worldwide visitors for its culture, entertainment and educational opportunities. Chi-Town, as many know it, is the third most populous city in the United States with 2.7 million residents. With more than 100 universities and colleges, students from around the world call Chicago home. 
+            </p>
+            <p>
+                Exploring Chicago
+    Incorporated as a city in 1837, Chicago is one of the most vibrant cities in the United States. Home to the world’s first skyscraper in 1885, Chicago now has 463 skyscrapers in the city, including the iconic Willis Tower in Downtown Chicago. Cloud Gate, the Lincoln Park Zoo and Navy Pier are also popular attractions for the 48 million people that visit Chicago each year. If you happen to make your way to this beautiful Midwestern city, you’ll want to bring your winter coat! Chicago’s official nickname is the <b><i>“Windy City,”</i></b> due to the blustery conditions year-round and the freezing weather during the winter months.
+            </p>
+
+            <p>
+                Experience the arts
+    Similar to New York City, Chicago is known as a creative home to many of the world’s most influential artists. The city has 60 museums and 90 art galleries. The Art Institute of Chicago attracts more than 1.5 million visitors annually and is the most well-known museum in the city. For aspiring artists, the School of the Art Institute of Chicago is recognized as one of the best art and design schools in the country. 
+            </p>
+
+            <p>
+                Entertainment for everyone
+    Whether it’s catching a game, attending a concert or just enjoying a night on the town, you’ll always have something exciting to do in Chicago! 
+
+    Chicago has some of the most passionate sports fans in the world, cheering on their Chicago Bears (Football), Cubs (Baseball), White Sox (Baseball), Bulls (Basketball) and Blackhawks (Hockey). Impressively, all of their major professional sports team have won championships. 
+            </p>
+
+            <p>
+                If you are interested in other forms of live entertainment, Chicago has more than 200 theaters and 225 music venues! Many of these are located in Downtown Chicago <b><i>(also called the “Chicago Loop”).</i></b> The Downtown Chicago area also offers some of the city’s best in dining, shopping and sightseeing.
+            </p><hr/>
+    </div>
+
+    <div class="container-fluid ">
+        <div class="row justify-content-start text-center">
+            <div class="col-12">
+                <h1>CHICAGO FUN FACTS</h1>
+            </div>
+        </div>
+        <div class="row justify-content-start">
+            <div class="col-6">
+                <ul>
+                    <li class="redStar">Four states are visible from the Skydeck Chicago</li>
+                    <li class="redStar">Chicago has several city-wide music festivals each year, including Lollapalooza and Pitchfork</li>
+                    <li class="redStar">The first televised U.S. presidential debate was broadcast from Chicago</li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <ul>
+                    <li class="redStar">Gotham City from Batman was inspired by Chicago</li>
+                    <li class="redStar">Chicago was the birthplace of Walt Disney</li>
+                    <li class="redStar">Ray Kroc's first McDonald's franchise opened in Chicago in 1955</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

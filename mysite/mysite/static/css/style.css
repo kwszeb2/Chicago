@@ -1,0 +1,137 @@
+video, img {
+    width: 100%;
+    height: auto;
+}
+
+.imgStyling {
+  height: 250px !important;
+  object-fit: cover !important;
+}
+
+ul {
+    list-style: none;
+}
+
+a {   
+  color: #7AD2F6 !important;
+  text-decoration: none;
+  font-size: 20px !important;
+}
+
+.redStar::before {
+    content: "\2736";
+    color: #ED1B24;
+    font-size: 20px;
+}
+
+body {
+    background-color: #7AD2F6 !important;
+}
+
+hr {
+    border: 1px solid #ED1B24 !important;
+}
+
+h1 {
+  color: white;
+}
+
+  /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    body {
+        background-color: #7AD2F6 !important;
+    }
+    
+    a {   
+    color: #7AD2F6 !important;
+    text-decoration: none;
+    font-size: 40px !important;
+  }
+  
+  a:hover {
+    color: #ED1B24 !important;
+    font-size: 40px !important;
+  }
+
+  video, img {
+    width: 100%;
+}
+
+.imgStyling {
+    height: 500px !important;
+    object-fit: cover !important;
+  }
+
+  hr {
+    border: 1px solid #ED1B24;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  .redStar::before {
+    content: "\2736";
+    color: #ED1B24;
+    font-size: 18px;
+}
+
+.navbar-expand-lg, .navbar-collapse {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-around !important;
+}
+
+.redStarNav::before {
+  content: "\2736";
+  color: #ED1B24;
+  font-size: 40px;
+}
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    body {
+        background-color: #7AD2F6 !important;
+    }
+    
+    a {   
+    color: #7AD2F6 !important;
+    text-decoration: none;
+    font-size: 40px !important;
+  }
+  
+  a:hover {
+    color: #ED1B24 !important;
+    font-size: 40px !important;
+  } 
+
+  video, img {
+    width: 100%;
+}
+
+.imgStyling {
+    height: 500px !important;
+    object-fit: cover !important;
+  }
+
+  hr {
+    border: 1px solid #ED1B24;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  .navbar-expand-lg, .navbar-collapse {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center !important;
+  }
+
+  .redStarNav::before {
+    content: "\2736";
+    color: #ED1B24;
+    font-size: 40px;
+}
+}
